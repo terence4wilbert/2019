@@ -1,0 +1,12 @@
+{{ define "New" }}
+  {{ template "Header" }}
+    {{ template "Menu" }}
+   <h2>New Shoe to the collection</h2>
+    <form method="POST" action="insert">
+      <label> Shoe </label><input type="text" name="shoe" /><br />
+      <label> Shoe Date </label><input type="text" name="shoedate" /><br />
+      <label> Description </label><input type="text" name="description" /><br />
+      <input type="submit" value="Save Kick" />
+    </form>
+  {{ template "Footer" }}
+{{ end }}

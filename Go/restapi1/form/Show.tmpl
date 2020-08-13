@@ -1,0 +1,9 @@
+{{ define "Show" }}
+  {{ template "Header" }}
+    {{ template "Menu"  }}
+    <h2> Vault {{ .Id }} </h2>
+      <p>Shoe: {{ .Shoe }}</p>
+      <p>Shoe Date:  {{ .ShoeDate }}</p>
+      <p>Description:  {{ .Description }}</p><br /> <a href="/edit?id={{ .Id }}">Edit</a></p>
+  {{ template "Footer" }}
+{{ end }}
